@@ -1322,6 +1322,23 @@ body.cursor-click #cursor-ring { width: 24px; height: 24px; border-color: var(--
 
 .footer-copy, .footer-legal { font-size: 0.82rem; color: var(--muted); opacity: 0.7; }
 
+/* ─── POLICY AND FAQ PAGES ───────────────────────────────────── */
+.policy-section, .faq-section { background: var(--bg); }
+.policy-container, .faq-container { max-width: 840px; }
+.policy-container { padding-top: 18px; }
+.policy-container h2 { margin-top: 42px; margin-bottom: 12px; color: var(--text); font-family: var(--font-display); font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+.policy-container p { max-width: 760px; color: var(--text-soft); font-size: 1rem; line-height: 1.85; }
+.policy-container a, .faq-item a { color: var(--cyan); }
+.policy-updated { color: var(--cyan) !important; font-size: 0.75rem !important; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.policy-note { margin-top: 46px; padding: 18px 20px; border-left: 2px solid var(--cyan); background: rgba(0,212,255,0.05); font-size: 0.9rem !important; }
+.faq-container { display: flex; flex-direction: column; gap: 12px; }
+.faq-item { border: 1px solid var(--line); background: rgba(11,27,46,0.52); }
+.faq-item summary { cursor: pointer; list-style: none; padding: 22px 52px 22px 24px; color: var(--text); font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; position: relative; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; position: absolute; right: 24px; color: var(--cyan); font-family: var(--font-body); font-size: 1.5rem; font-weight: 300; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin: 0; padding: 0 52px 24px 24px; color: var(--text-soft); line-height: 1.8; }
+
 /* ─── REVEAL ANIMATIONS ─────────────────────────────────────── */
 [class*="reveal-"] {
   opacity: 0;
